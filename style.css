@@ -141,18 +141,16 @@ table {
 	height: 100vh;
 	display: flex;
 	flex-direction: row;
-
 	margin: 0 auto;
 	gap: 30px;
 }
 
 .left-section {
 	width: 300px;
-
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding: 10px;
+	padding: 10px; 
 }
 
 .right-section {
@@ -160,7 +158,7 @@ table {
 	display: flex;
 	flex-direction: column;
 	overflow: overlay;
-	padding-top: 30vh;
+	padding-top: 5vh; 
 }
 
 h1 {
@@ -171,23 +169,24 @@ h1 {
 }
 
 img {
-	margin-bottom: 10px;
-	border-radius: 15px;
+	margin-bottom: 10px; 
+	border-radius: 15px; 
 }
 
-@media (max-width:420px) {
+@media (max-width:640px) {
 	.container {
-		flex-direction: column;
-		padding: 20px;
-		width: 90vw;
+		flex-direction: column; /* Stack items vertically on smaller screens */
+		padding: 20px; /* Padding around the container */
+		width: 90vw; /* Adjusted width for better responsiveness */
 	}
 
 	.right-section {
-		padding-top: 5px;
-		width: 72%;
+		width: 100%; /* Adjusted width to 100% */
+		margin: 5px auto; /* Centered horizontally and added some top margin */
 	}
 
 	.left-section {
-		width: 74%;
-	}
+		width: 100%; /* Adjusted width to 100% */
+		margin: 10px auto; /* Centered horizontally and added some top margin */
+	  }
 }
